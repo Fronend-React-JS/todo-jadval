@@ -1,8 +1,22 @@
-export function sum (a, b) {
-    return a + b;
-}
+function saqlash() {
+    const ism = document.getElementById("ism").value;
+    const yosh = document.getElementById("yosh").value;
+    const email = document.getElementById("email").value;
+    const malumotlar = "Ism: " + ism + "Yosh: "+ yosh + "Email: " + email;
+    document.getElementById("malumotlar").innerHTML = malumotlar;
 
-export const user = {
-    name: "Jhon",
-    age: 26,
-};
+  }
+
+btn.addEventListener('click', function() {
+    
+   if (ism.value && yosh.value && email.value) {
+    
+    saqlash();
+
+    ism.value = '';
+    yosh.value = '';
+    email.value = '';
+   }
+
+});
+
