@@ -5,16 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    table , th, td {
+        border: 1px solid black;
+        margin-top: 10px;
+    }
+</style>
 <body>
     <div class="wraper">
         <form>
-            <input required type="text" id="name" placeholder="ismingizni kiriting...">
-            <input required type="number" id="age" placeholder="yoshingizni kiriting...">
-            <input required type="email" id="email" placeholder="emailingizni kiriting...">
+            <input id="ism" required type="text" id="name" placeholder="ismingizni kiriting...">
+            <input id="yosh" required type="number" id="age" placeholder="yoshingizni kiriting...">
+            <input id="email" required type="email" id="email" placeholder="emailingizni kiriting...">
+
+            <input id="btn" type="button" value="saqlash">
+            <!-- <button onclick="saqlash()">Saqlash</button> -->
         </form>
-        
+        <div id="malumotlar"></div>
+        <!-- <table>
+            <tr>
+                <th>T/r</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>@email</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Shoxruh</td>
+                <td>17</td>
+                <td>geysila@gmail.com</td>
+            </tr>
+        </table> -->
     </div>
 
-    <script src="./script.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Foydalanuvchi Ma'lumotlari</h2>
+
+<p>Ism:</p>
+<input type="text" id="ismInput">
+
+<p>Yosh:</p>
+<input type="text" id="yoshInput">
+
+<p>Email:</p>
+<input type="text" id="emailInput">
+
+<br><br>
+<button onclick="saqlash()">Saqlash</button>
+
+<p id="malumotlar"></p>
+
+<script>
+function saqlash() {
+  var ism = document.getElementById("ismInput").value;
+  var yosh = document.getElementById("yoshInput").value;
+  var email = document.getElementById("emailInput").value;
+  var malumotlar = "Ism: " + ism + "<br>Yosh: " + yosh + "<br>Email: " + email;
+  document.getElementById("malumotlar").innerHTML = malumotlar;
+}
+</script>
+
+</body>
+</html> -->
